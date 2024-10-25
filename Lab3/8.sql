@@ -1,12 +1,12 @@
 SELECT
     e1.EMPLOYEE_ID AS "Employee ID",
-    e1.FIRST_NAME, e1.LAST_NAME AS "Employee1",
+    e1.FIRST_NAME ||' '|| e1.LAST_NAME AS "Employee1",
     e2.EMPLOYEE_ID AS "Manager ID",
-    e2.FIRST_NAME, e2.LAST_NAME AS "Employee2",
+    e2.FIRST_NAME ||' '|| e2.LAST_NAME AS "Employee2",
     e3.EMPLOYEE_ID AS "Director ID",
-    e3.FIRST_NAME, e3.LAST_NAME AS "Employee3",
+    e3.FIRST_NAME ||' '|| e3.LAST_NAME AS "Employee3",
     e4.EMPLOYEE_ID AS "VP ID",
-    e4.FIRST_NAME, e4.LAST_NAME AS "Employee4"
+    e4.FIRST_NAME ||' '|| e4.LAST_NAME AS "Employee4"
 FROM
     EMPLOYEES e1
         LEFT JOIN
