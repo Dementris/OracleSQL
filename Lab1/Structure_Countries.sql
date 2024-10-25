@@ -1,10 +1,10 @@
 -- Create table
 create table COUNTRIES
 (
-  country_id   CHAR(2),
-  country_name VARCHAR2(40),
-  region_id    NUMBER,
-  constraint COUNTRY_C_ID_PK primary key (COUNTRY_ID)
+    country_id   CHAR(2),
+    country_name VARCHAR2(40),
+    region_id    NUMBER,
+    constraint COUNTRY_C_ID_PK primary key (COUNTRY_ID)
 )
 -- Add comments to the table 
 comment on table COUNTRIES
